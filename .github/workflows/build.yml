@@ -64,8 +64,8 @@ jobs:
         server: www.oldhickoryinn.com
         port: 22
         protocol: ftps
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
+        username: github_oldhickoryinn
+        password: KInssYL5nBeJ
         local-dir: ./dist
         server-dir: test-deploy
         dangerous-clean-state: true
