@@ -50,7 +50,7 @@ jobs:
       name: 'Production'
     steps:
     - name: Deploy to Dreamhost Server
-      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      uses: SamKirkland/FTP-Deploy-Action@4.2.1
       with:
         server: www.oldhickoryinn.com
         port: 22
