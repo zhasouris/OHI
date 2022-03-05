@@ -33,9 +33,15 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+    - name: DEBUG 1
+      run: |
+        ls
     - run: npm ci
     - run: npm run build --if-present
 #    - run: npm test
+    - name: DEBUG 2
+      run: |
+        ls
 
   deploy:
     runs-on: ubuntu-latest
