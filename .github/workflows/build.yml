@@ -61,7 +61,7 @@ jobs:
     - name: Deploy to Dreamhost Server
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        server: oldhickoryinn.com
+        server: www.oldhickoryinn.com
         port: 22
         protocol: ftps
         username: ${{ secrets.FTP_USER }}
