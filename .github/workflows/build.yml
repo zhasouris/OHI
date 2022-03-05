@@ -49,11 +49,24 @@ jobs:
     environment:
       name: 'Production'
     steps:
+    
+    - name: Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: oldhickoryinn.com
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.ftp_password }}
+        
+        
     - name: Deploy to Dreamhost Server
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: sftp://stagingawesometheme.sftp.wpengine.com:2222/test-deploy
-        ftp-username: ${{ secrets.FTP_USER }}
-        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server: oldhickoryinn.com
+        port: 22
+        protocol: ftps
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist
+        server-dir: test-deploy
+        dangerous-clean-state: true
         
