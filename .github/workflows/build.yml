@@ -49,6 +49,9 @@ jobs:
     environment:
       name: 'Production'
     steps:
+    - name: DEBUG 2
+      run: |
+        ls
     - name: Deploy to Dreamhost Server
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
@@ -57,6 +60,6 @@ jobs:
         protocol: ftps
         username: github_oldhickoryinn
         password: KInssYL5nBeJ
-        local-dir: ./dist/
+        local-dir: dist/
         server-dir: test-deploy/
         
