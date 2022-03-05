@@ -49,6 +49,6 @@ jobs:
         ftp-server: sftp://stagingawesometheme.sftp.wpengine.com:2222/
         ftp-username: ${{ secrets.FTP_USER }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: test-deploy
+        entryPoint: test-deploy
         local-dir: ./dist
         
