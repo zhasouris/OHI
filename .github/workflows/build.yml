@@ -29,3 +29,19 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
 #    - run: npm test
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    environment:
+      name: 'Production'
+    steps:
+    - name: Deploy to Dreamhost Server
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: sftp://stagingawesometheme.sftp.wpengine.com:2222/
+        ftp-username: ${{ secrets.FTP_USER }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        server-dir: test-deploy
+        local-dir: ./dist
+        
