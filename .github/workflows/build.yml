@@ -59,5 +59,4 @@ jobs:
         password: KInssYL5nBeJ
         local-dir: ./dist/
         server-dir: test-deploy/
-        dangerous-clean-state: true
         
