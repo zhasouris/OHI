@@ -62,8 +62,8 @@ jobs:
         server: www.oldhickoryinn.com
         port: 22
         protocol: ftps-legacy
-        username: ${{ FTP_USER }}
-        password: ${{ FTP_PASSWORD }}
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
 #        local-dir: dist/
         server-dir: test-deploy/
         
