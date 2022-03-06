@@ -66,6 +66,6 @@ jobs:
         protocol: ftps
         username: github_oldhickoryinn
         password: KInssYL5nBeJ
-        local-dir: dist/
+#        local-dir: dist/
         server-dir: test-deploy/
         
