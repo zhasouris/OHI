@@ -64,8 +64,8 @@ jobs:
         server: www.oldhickoryinn.com
         port: 22
         protocol: ftps-legacy
-        username: github_oldhickoryinn
-        password: KInssYL5nBeJ
+        username: FTP_USER
+        password: FTP_PASSWORD
 #        local-dir: dist/
         server-dir: test-deploy/
         
