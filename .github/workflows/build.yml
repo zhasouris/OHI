@@ -56,22 +56,22 @@ jobs:
     - name: DEBUG 2
       run: |
         ls
-    - name: Sync files
-      uses: SamKirkland/web-deploy@1.0.0
-      with:
-        target-server: www.oldhickoryinn.com
-        remote-user: ${{ secrets.FTP_USER }}
-        remote-key: ${{ secrets.FTP_PASSWORD }}
-        source-path: ./
-        destination-path: test-deploy
-#     - name: Deploy to Dreamhost Server
-#       uses: SamKirkland/FTP-Deploy-Action@4.3.0
+#     - name: Sync files
+#       uses: SamKirkland/web-deploy@1.0.0
 #       with:
-#         server: www.oldhickoryinn.com
-#         port: 22
-#         protocol: ftps-legacy
-#         username: ${{ secrets.FTP_USER }}
-#         password: ${{ secrets.FTP_PASSWORD }}
-# #        local-dir: dist/
-#         server-dir: test-deploy/
-        
+#         target-server: www.oldhickoryinn.com
+#         remote-user: ${{ secrets.FTP_USER }}
+#         remote-key: ${{ secrets.FTP_PASSWORD }}
+#         source-path: ./
+#         destination-path: test-deploy
+    - name: Deploy to Dreamhost Server
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: www.oldhickoryinn.com
+        port: 22
+        protocol: ftps-legacy
+        username: ${{ secrets.FTP_USER }}
+        password: ${{ secrets.FTP_PASSWORD }}
+#        local-dir: dist/
+        server-dir: test-deploy/
+
