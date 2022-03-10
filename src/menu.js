@@ -4,16 +4,16 @@ export default [
         groups : [
             {
                 items : [
-                    { title : "Ham, Links, Pork, Riblets", price : 12.95},
-                    { title : "Beef (sliced brisket)", price : 14.95},
-                    { title : "Beef (chopped beef in sauce)", price : 13.50},
-                    { title : "Ribs  (baby back)", price : 13.50},
-                    { title : "Chicken (half)", price : 12.95},
-                    { title : "Chicken (leg qrtr.)", price : 9.50},
-                    { title : "Chicken (breast qtr.)", price : 9.95},
-                    { title : "Turkey Breast (sliced)", price : 13.25},
-                    { title : "Two meats ( 2 different meats )", price : 15.50},
-                    { title : "Three meats ( 3 different meats )", price : 16.95},
+                    { title : "Ham, Links, Pork, Riblets", price : 13.50},
+                    { title : "Beef (sliced brisket)", price : 15.95},
+                    { title : "Beef (chopped beef in sauce)", price : 14.95},
+                    { title : "Ribs  (pork)", price : 14.95},
+                    { title : "Chicken (half)", price : 13.50},
+                    { title : "Chicken (leg qrtr.)", price : 9.75},
+                    { title : "Chicken (breast qtr.)", price : 10.25},
+                    { title : "Turkey Breast (sliced)", price : 13.95},
+                    { title : "Two meats ( 2 different meats )", price : 16.50},
+                    { title : "Three meats ( 3 different meats )", price : 17.95},
                 ]
             }
         ]
@@ -23,9 +23,9 @@ export default [
         groups : [
             {
                 items : [
-                    { title : "Fried Catfish", price : 12.50},
-                    { title : "Chicken Fried Steak", price : 15.95},
-                    { title : "Chicken Tenders", price : 12.95},
+                    { title : "Fried Catfish", price : 13.95},
+                    { title : "Chicken Fried Steak", price : 16.95},
+                    { title : "Chicken Tenders", price : 13.50},
                 ]
             }
         ]
@@ -35,8 +35,8 @@ export default [
         groups : [
             {
                 items : [
-                    { title : "Regular", price : 2.25},
-                    { title : "Large", price : 2.75},
+                    // { title : "Regular", price : 2.25},
+                    // { title : "Large", price : 2.75},
                     { title : "Bottled Soda", price : 2.50},
                     { title : "Bottled Water", price : 1.50},
                     { title : "Coffee", price : 1.75},
@@ -46,7 +46,6 @@ export default [
                 ]
             }
         ],
-        footerText : "Wines contain sulfites",
     },
     {
         title : "Baked Potatoes",
@@ -54,11 +53,11 @@ export default [
             {
                 items : [
                     { title : "Fancy (Stuffed with butter,  cheese, s. cream & chives)", price : 7.95},
-                    { title : "Slice Baker   (Ham, Links, Chicken, Pork, Turkey)", price : 11.50},
-                    { title : "Chop Baker     (Chopped beef in sauce)", price : 12.00},
-                    { title : "Slice Baker          (Topped with brisket)", price : 12.00},
-                    { title : "Chicken Breast Baker", price : 12.00},
-                    { title : "Two Meat Baker ( 2 different meats ) ", price : 13.50},
+                    { title : "Slice Baker   (Ham, Links, Chicken, Pork, Turkey)", price : 12.00},
+                    { title : "Chop Baker     (Chopped beef in sauce)", price : 12.95},
+                    { title : "Slice Baker          (Topped with brisket)", price : 12.95},
+                    { title : "Chicken Breast Baker", price : 12.95},
+                    { title : "Two Meat Baker ( 2 different meats ) ", price : 14.95},
                 ],
             }
         ],
@@ -70,14 +69,14 @@ export default [
             {
                 columns : ["Bun", "Po-Boy"],
                 items : [
-                    { title : "Ham, Links, Pork (sliced)", price : [ 8.00, 9.00]},
-                    { title : "Brisket (sliced)", price : [ 8.95, 9.95 ]},
-                    { title : "Chopped Beef (in sauce)", price : [ 8.50, 9.50 ]},
-                    { title : "Turkey Breast (sliced)", price : [ 8.25, 9.25 ]},
-                    { title : "Chicken (dark meat)", price : [ 8.00, 9.00 ]},
-                    { title : "Chicken (white meat)", price : [ 8.50, 9.50]},
-                    { title : "Two meats: (2 different meats)", price : [ 9.50, 10.50 ]},
-                ]
+                    { title : "Ham, Links, Pork (sliced)", price : [ 8.95, 10.00]},
+                    { title : "Brisket (sliced)", price : [ 9.95, 10.95 ]},
+                    { title : "Chopped Beef (in sauce)", price : [ 9.50, 10.50 ]},
+                    { title : "Turkey Breast (sliced)", price : [ 9.25, 10.25 ]},
+                    { title : "Chicken (dark meat)", price : [ 8.95, 10.00 ]},
+                    { title : "Chicken (white meat)", price : [ 9.50, 10.50]},
+                    { title : "Two meats: (2 different meats)", price : [ 10.95, 11.95 ]},
+                ]//where are the po-boy changes
             }
         ]
     },
@@ -86,10 +85,10 @@ export default [
         groups : [
             {
                 items : [
-                    { title : "1/3 Lb. Burger (cheese + .50)", price : 7.95},
-                    { title : "Chicken Fried Steak Sandwich", price : 8.95},
-                    { title : "Fried Catfish Po-boy", price : 9.25},
-                    { title : "Gyros Sand. On Pita Bread", price : 8.95},
+                    { title : "1/3 Lb. Burger (cheese + .50)", price : 9.25},
+                    { title : "Chicken Fried Steak Sandwich", price : 9.95},
+                    { title : "Fried Catfish Po-boy", price : 10.95},
+                    { title : "Gyros Sand. On Pita Bread", price : 9.95},
                 ]
             }
         ]
@@ -100,12 +99,12 @@ export default [
             {
                 columns : ["Small", "Large"],
                 items : [
-                    { title : "House Salad", price : [ 3.95, 6.50 ]},
-                    { title : "Tasty  Salad", price : [ 8.95, 10.95 ]},
-                    { title : "Caesar Salad", price : [ null, 8.95 ]},
-                    { title : "Chicken Caesar", price : [ null, 11.95 ]},
-                    { title : "Greek Salad", price : [ null, 9.95 ]},
-                    { title : "Greek Salad with Meat", price : [ null, 12.95 ]},
+                    // { title : "House Salad", price : [ 4.95, 6.95 ]},
+                    // { title : "Tasty  Salad", price : [ 9.50, 11.50 ]},
+                    { title : "Caesar Salad", price : [ null, 9.95 ]},
+                    { title : "Chicken Caesar", price : [ null, 12.95 ]},
+                    { title : "Greek Salad", price : [ null, 10.50 ]},
+                    { title : "Greek Salad with Meat", price : [ null, 13.50 ]},
                 ]
             }
         ]
@@ -133,10 +132,9 @@ export default [
             "B-b-q beans",
             "Green beans",
             "Cut Corn",
-            "Potato salad",
+            "Potato Salad",
             "Cole slaw",
-            "Cucumber",
-            "Salad",
+            "Cucumber Salad",
             "Fried Okra",
             "Fries",
             "Onion Rings",
@@ -144,16 +142,16 @@ export default [
         ],
         groups : [
             {
-                columns : ["Side", "1/2 Pint", "Pint", "Quart", "Gallon"],
+                columns : ["1/2 Pint", "Pint", "Quart", "Gallon"],
                 items : [
-                    { title : "Sides", price : [ 2.50, 3.25, 5.95, 9.95, 29.95 ]},
+                    { title : "Sides", price : [ 3.50, 6.50, 10.95, 32.95 ]},
                 ]
             },
             {
                 columns : ["Price"],
                 items : [
-                    { title : "Cut Fries", price : 3.25},
-                    { title : "Onion Rings", price : 3.95},
+                    { title : "Cut Fries", price : 3.75},
+                    { title : "Onion Rings", price : 4.75},
                 ]
             },
         ]
@@ -164,20 +162,20 @@ export default [
             {
                 columns : ["Serving", "Pint", "Quart", "Whole Pan"],
                 items : [
-                    { title : "Rice Pudding", price : [ 3.50, 6.00, 11.00, 20.00 ]},
-                    { title : "Peach Cobbler", price : [ 3.50, 6.00, 11.00, 20.00 ]},
+                    { title : "Rice Pudding", price : [ 3.75, 7.00, 12.00, 25.00 ]},
+                    { title : "Peach Cobbler", price : [ 3.75, 7.00, 12.00, 25.00 ]},
                 ]
             },
             {
                 columns : ["Slice", "Whole"],
                 items : [
-                    { title : "Pies", price : [ 3.50, 19.00 ]},
+                    { title : "Pies", price : [ 3.75, 25.00 ]},
                 ]
             },
             {
                 columns : ["Serving"],
                 items : [
-                    { title : "Cheese cake", price : 3.75},
+                    { title : "Cheese cake", price : 3.95},
                 ]
             },
         ]
@@ -187,10 +185,10 @@ export default [
         groups : [
             {
                 items : [
-                    { title : "Plate or sandwich (beef, ham, links)", price : 7.95},
+                    { title : "Plate or sandwich (beef, ham, links)", price : 8.50},
                     { title : "Grilled Cheese", price : 5.95},
-                    { title : "Corn Dog", price : 5.95},
-                    { title : "Chicken Strips", price : 7.50},
+                    // { title : "Corn Dog", price : 5.95},
+                    // { title : "Chicken Strips", price : 7.50},
                 ]
             }
         ]

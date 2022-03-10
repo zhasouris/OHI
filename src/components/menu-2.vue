@@ -19,8 +19,13 @@
                         <tbody>
                             <tr v-for="(item, i) in group.items" :key="i">
                                 <td>{{ item.title }}</td>
-                                <td v-if="!isNaN(item.price)"><span class="uom" >$</span>{{ item.price | formatNumber }}</td>
-                                <td v-else v-for="(price, p) in item.price" :key="p"><span class="uom" >$</span> {{ price | formatNumber  }}</td>
+                                <td v-if="!isNaN(item.price)">
+                                    <span class="price"><span class="uom" >$</span>{{ item.price | formatNumber }}</span>
+                                </td>
+                                <td v-else v-for="(price, p) in item.price" :key="p">
+                                    <span v-if="price != null "><span class="price"><span class="uom" >$</span> {{ price | formatNumber  }}</span></span>
+                                    <span v-else></span>
+                                </td>
                             </tr>
                         </tbody>
                     </template>
@@ -68,5 +73,9 @@ export default {
 <style lang="scss">
 .uom {
     opacity:.3;display:inline-block;margin:0px 5px;
+}
+.price
+{
+    white-space: nowrap;
 }
 </style>
